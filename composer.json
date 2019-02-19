@@ -1,0 +1,30 @@
+{
+    "name": "pawel-brzezinski/smart-cache-component",
+    "description": "Cache component with PSR-6 and external cache libraries as providers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Brzeziński",
+            "email": "pawel.brzezinski@smartint.pl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "PB\\Component\\Cache\\": "src/",
+            "PB\\Component\\Cache\\Tests\\": "tests/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "require": {
+        "php": "^7.1",
+        "psr/cache": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "symfony/cache": "^4.2"
+    }
+}
